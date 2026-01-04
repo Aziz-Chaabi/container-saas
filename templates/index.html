@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Container SaaS</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Nginx Container Manager</h1>
+
+<form method="POST" action="/create">
+    <input name="name" placeholder="Container Name" required>
+    <input name="port" placeholder="Port (8081)" required>
+    <button>Create Container</button>
+</form>
+
+<table>
+<tr>
+    <th>Name</th>
+    <th>Status</th>
+    <th>Actions</th>
+</tr>
+
+{% for c in containers %}
+<tr>
+    <td>{{c[0]}}</td>
+    <td>{{c[1]}}</td>
+    <td>
+        <a href="/start/{{c[0]}}">Start</a>
+        <a href="/stop/{{c[0]}}">Stop</a>
+        <a href="/delete/{{c[0]}}">Delete</a>
+    </td>
+</tr>
+{% endfor %}
+
+</table>
+</body>
+</html>
