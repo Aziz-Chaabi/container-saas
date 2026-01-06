@@ -25,7 +25,7 @@ Backend: Python (Flask)
 Frontend: HTML, CSS
 Container Runtime: Docker
 Web Server: Nginx
-Operating System: Linux (Ubuntu / Rocky Linux)
+Operating System: Linux (Ubuntu )
 Version Control: Git & GitHub
 
 --------------------------------------------------
@@ -37,16 +37,16 @@ projet-python/
 |-- requirements.txt
 |-- README.txt
 |-- templates/
-|   |-- index.html
+   |-- index.html
 |-- static/
-|   |-- style.css
+   |-- style.css
 |-- nginx/
-|   |-- index.html
+   |-- index.html
 
 --------------------------------------------------
 
 PREREQUISITES
-The following must be installed on the Linux VM:
+The following must be installed on the Linux vm:
 - Python 3
 - Docker Engine
 - Git
@@ -82,8 +82,6 @@ pip3 install -r requirements.txt
 python3 app.py
 
 The application will run on:
-http://localhost:5000
-or
 http://<VM-IP>:5000
 
 --------------------------------------------------
@@ -134,7 +132,6 @@ LIMITATIONS
 
 --------------------------------------------------
 
-ACADEMIC PURPOSE
 This project demonstrates:
 - SaaS application architecture
 - Docker container lifecycle management
@@ -143,10 +140,4 @@ This project demonstrates:
 
 --------------------------------------------------
 
-AUTHOR
-Aziz Chaabi
 
---------------------------------------------------
-
-LICENSE
-This project is intended for educational use only.
